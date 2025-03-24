@@ -17,8 +17,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#main-page">Pierwsza sekcja</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#secound-page">Druga sekcja</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#main-page">Ciekawostki</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#secound-page">Zawodnicy warci uwagi</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
                 </ul>
             </div>
@@ -38,7 +38,7 @@
                     <div class="carousel-item active">
                         <img src="images/zdj1.png" class="d-block w-100" alt="Opis slajdu 1">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Zdjęcie 1</h5>
+                            <h5 class="text-black" 1></h5>   
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -77,26 +77,39 @@
 
         <section id="main-page" class="jumbotron">
         <div class="container">
-<h1>Pierwsza sekcja strony!</h1>
-<p>
-Tu wstaw dłuższy tekst, przynajmniej jeden akapit….
-</p>
+          <h1>Ciekawostki</h1>
+
+          <p><strong>1. Najwięcej punktów w jednym meczu</strong><br>
+          Wilt Chamberlain zapisał się w historii NBA, zdobywając aż 100 punktów w jednym meczu! To niesamowite osiągnięcie miało miejsce 2 marca 1962 roku, a do dziś nikt nie zbliżył się do tego rekordu. Najbliżej był Kobe Bryant, który w 2006 roku zdobył 81 punktów.</p>
+          
+          <p><strong>2. Najstarszy gracz w historii</strong><br>
+          Vince Carter, legenda NBA, grał w lidze aż 22 sezony, kończąc karierę w 2020 roku w wieku 43 lat. To absolutny rekord, jeśli chodzi o długość kariery. Carter jest także jedynym zawodnikiem, który występował w NBA w czterech różnych dekadach (lata 90., 2000., 2010. i 2020.).</p>
+          
+          <p><strong>3. Najwięcej mistrzostw NBA</strong><br>
+          Pod względem liczby tytułów mistrzowskich króluje Bill Russell, który w barwach Boston Celtics zdobył aż 11 pierścieni mistrzowskich! Celtics zdominowali ligę w latach 50. i 60., a Russell był ich kluczowym zawodnikiem.</p>
+          
+          <p><strong>4. Kosmiczne zarobki gwiazd</strong><br>
+          Najlepiej zarabiającym koszykarzem w historii NBA jest LeBron James, którego łączny dochód (zarówno z kontraktów, jak i umów sponsorskich) przekroczył już milion dolarów… dziennie! Wielu zawodników NBA dorabia poza parkietem, reklamując buty, ubrania i inne produkty.</p>
+          
+          <p><strong>5. Najdłuższa seria zwycięstw</strong><br>
+          Los Angeles Lakers z sezonu 1971/72 to drużyna, która zapisała się w historii serią 33 wygranych meczów z rzędu. To wciąż niepobity rekord NBA, który pokazuje dominację tej legendarnej ekipy prowadzonej przez Wilta Chamberlaina i Jerry’ego Westa.</p>
+          
 </div>
 </section>
 <footer>
-    <!-- Button trigger modal -->
+    
     <div class="container">
 <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Polityka Prywatności
   </button>
 </div>
   
-  <!-- Modal -->
+  
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Polityka Prywatności</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -112,24 +125,38 @@ Tu wstaw dłuższy tekst, przynajmniej jeden akapit….
     </footer>
 
     <section id="secound-page">
-        <div class="container">
-<h1 class="bg-dark text-white">Druga sekcja strony!</h1>
-<p>
-Tu wstaw dłuższy tekst, przynajmniej jeden akapit….
-</p>
+      <div class="container">
+        <h1 class="bg-dark text-white">Zawodnicy warci uwagi</h1>
+        <p>
+          <strong>Kevin Durant</strong><br>
+          Kevin Durant jest jednym z najbardziej wszechstronnych strzelców w historii NBA, a jego unikalna kombinacja wzrostu i umiejętności sprawia, że jest koszmarem dla obrońców.
+        </p>
+        <p>
+          <strong>Jayson Tatum</strong><br>
+          Jayson Tatum wyrósł na lidera Boston Celtics i już kilkukrotnie udowodnił, że potrafi dominować w kluczowych momentach meczów.
+        </p>
+        <p>
+          <strong>Anthony Edwards</strong><br>
+          Anthony Edwards, młoda gwiazda Minnesota Timberwolves, imponuje nie tylko atletycznością, ale także pewnością siebie i nieustannym dążeniem do bycia jednym z najlepszych graczy w lidze.
+        </p>
+      </div>
+    </section>
+    
 
 
 <div class="container text-center bg-dark text-white">
     <div class="row align-items-start">
       <div class="col">
-        <img src="images/zdj5.png" class="img-fluid">
+        <img src="images/zdj5.png" class="img-fluid rounded-4">
+        <h3 class="text-white">Kevin Durant</h3>
       </div>
       <div class="col">
-        <img src="images/zdj6.png" class="img-fluid">
-       
+        <img src="images/zdj6.png" class="img-fluid rounded-4"> 
+       <h3 class="text-white"> Jayson Tatum</h3>
       </div>
       <div class="col">
-        <img src="images/zdj7.png" class="img-fluid">
+        <img src="images/zdj7.png" class="img-fluid rounded-4">
+        <h3 class="text-white">Anthony Edwards</h3>
       </div>
     </div>
   </div>
