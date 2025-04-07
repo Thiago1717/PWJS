@@ -3,10 +3,9 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Lab4</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
 </head>
 <body>
     <form action="index.html#kontakt" method="post" onsubmit="return
@@ -22,39 +21,7 @@ checkForm();" >
 </fieldset>
 
 </form> 
-
-<script>
-    function checkForm() {
-        var error = false;
-        var errorText = "";
-    
-        var contactName = document.getElementById("contactName");
-        var contactEmail = document.getElementById("contactEmail");
-    
-        if (contactName.value.trim() === "") {
-            errorText += "imię\n";
-            error = true;
-        }
-    
-        if (contactEmail.value.trim() === "") {
-            errorText += "email\n";
-            error = true;
-        } else {
-            var email = contactEmail.value.trim();
-            var regex = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+\.)+[a-zA-Z]{2,}$/;
-            if (!regex.test(email)) {
-                errorText += "błędny email\n";
-                error = true;
-            }
-        }
-    
-        if (!error) {
-            return true;
-        } else {
-            alert("Nie wypełniłeś następujących pól:\n" + errorText);
-            return false;
-        }
-    }
-    </script>
+<script src='main.js'></script>
+<script src="js/forms.js"></script>
 </body>
 </html>
