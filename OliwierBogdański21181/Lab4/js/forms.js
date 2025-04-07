@@ -4,6 +4,7 @@ function checkForm() {
 
     var contactName = document.getElementById("contactName");
     var contactEmail = document.getElementById("contactEmail");
+    var message = document.getElementById("message");
 
     if (contactName.value.trim() === "") {
         errorText += "imię\n";
@@ -20,6 +21,11 @@ function checkForm() {
             errorText += "błędny email\n";
             error = true;
         }
+    }
+
+    if (message.value.trim() === "") {
+        errorText += "wiadomość\n";
+        error = true;
     }
 
     if (!error) {
