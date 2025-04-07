@@ -12,7 +12,7 @@ function hideError(id) {
 function validateName() {
     const name = document.getElementById("contactName");
     if (name.value.trim() === "") {
-        showError("errorName", "Podanie imienia jest wymagane!");
+        showError("errorName", "Należy podać imię!");
         name.classList.add("is-invalid");
         return false;
     } else {
@@ -29,7 +29,7 @@ function validateEmail() {
     const regex = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+\.)+[a-zA-Z]{2,}$/;
 
     if (value === "") {
-        showError("errorEmail", "Adres email jest wymagany.");
+        showError("errorEmail", "Należy podać adres email.");
         email.classList.add("is-invalid");
         return false;
     } else if (!regex.test(value)) {
