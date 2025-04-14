@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5</title>
+</head>
+<body>
+
+<div id="main-page"></div>
+
+<script>
+    let tablica = [];
+    tablica[tablica.length] = 'nowy7';
+    tablica.push('nowy8', 'nowy9', 'nowy10', 'nowy11');
+    tablica.unshift('nowy12', 'nowy13');
+    document.write(tablica);
+
+    let nowaTablica = ['Element1', 'Element2', 'Element3', 'Element4'];
+    document.write('<p>Pierwszy element to <strong>' + nowaTablica[0] + '</strong></p>');
+    document.write('<p>Ostatni element to: <strong>' + nowaTablica[nowaTablica.length - 1] + '</strong></p>');
+
+    nowaTablica.unshift('Element0');
+    document.write('<p>Pierwszy element po unshift() to: <strong>' + nowaTablica[0] + '</strong></p>');
+</script>
+
+<div id="zadanie3"></div>
+<script>
+    let paragrafy = document.getElementsByTagName('p');
+    let iloscParagrafow = paragrafy.length;
+
+    document.getElementById("zadanie3").innerHTML = 
+        "<h3>Zadanie 3</h3>" +
+        "<p>Na stronie znajduje się <strong>" + iloscParagrafow + "</strong> elementów &lt;p&gt;.</p>"; 
+</script>
+
+<!-- Zadanie 4 na samym dole -->
+<div id="zadanie4">
+    <h3>Zad4</h3>
+
+    <script>
+        const main = document.getElementById('zadanie4');
+
+        // Moje dane
+        const imie = "Oliwier";
+        const nazwisko = "Bogdański";
+
+        // Dodaj dane do sekcji za pomocą DOM
+        let dane = document.createElement('p');
+        dane.textContent = "Imię i nazwisko: " + imie + " " + nazwisko;
+        main.appendChild(dane);
+
+        // Tworzenie dwóch nowych akapitów z elementami z tablicy
+        let akapit1 = document.createElement('p');
+        akapit1.textContent = "Element z pierwszej tablicy: " + tablica[2];
+        main.appendChild(akapit1);
+
+        let akapit2 = document.createElement('p');
+        akapit2.textContent = "Element z drugiej tablicy (nowaTablica): " + nowaTablica[3];
+        main.appendChild(akapit2);
+
+        let i = 0;
+        let output1 = document.createElement('p');
+        output1.textContent = "Wyświetlenie elementów pętlą while (połowa tablicy): ";
+        while (i < tablica.length / 2) {
+            output1.textContent += tablica[i] + ", ";
+            i++;
+        }
+        main.appendChild(output1);
+
+        let output2 = document.createElement('p');
+        output2.textContent = "Wyświetlenie elementów pętlą For (połowa tablicy):  ";
+        for (let j = 0; j < nowaTablica.length / 2; j++) {
+            output2.textContent += nowaTablica[j] + ", ";
+        }
+        main.appendChild(output2);
+
+        function pokazDane() {
+            let daneZDom = document.getElementById("zadanie4").getElementsByTagName("p")[0].textContent;
+            alert("Dane: " + daneZDom);
+        }
+    </script>
+
+    <button onclick="pokazDane()">Pokaż dane</button>
+</div>
+
+</body>
+</html>
