@@ -34,23 +34,19 @@
         "<p>Na stronie znajduje się <strong>" + iloscParagrafow + "</strong> elementów &lt;p&gt;.</p>"; 
 </script>
 
-<!-- Zadanie 4 na samym dole -->
 <div id="zadanie4">
     <h3>Zad4</h3>
 
     <script>
         const main = document.getElementById('zadanie4');
 
-        // Moje dane
         const imie = "Oliwier";
         const nazwisko = "Bogdański";
 
-        // Dodaj dane do sekcji za pomocą DOM
         let dane = document.createElement('p');
         dane.textContent = "Imię i nazwisko: " + imie + " " + nazwisko;
         main.appendChild(dane);
 
-        // Tworzenie dwóch nowych akapitów z elementami z tablicy
         let akapit1 = document.createElement('p');
         akapit1.textContent = "Element z pierwszej tablicy: " + tablica[2];
         main.appendChild(akapit1);
