@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Lab5</title>
 </head>
 <body>
 
-<div id="main-page"></div>
-
+<div id="Zad1"></div>
+<h3>Zad1</h3>
 <script>
+    
     let tablica = [];
     tablica[tablica.length] = 'nowy7';
     tablica.push('nowy8', 'nowy9', 'nowy10', 'nowy11');
     tablica.unshift('nowy12', 'nowy13');
     document.write(tablica);
-
     let nowaTablica = ['Element1', 'Element2', 'Element3', 'Element4'];
-    document.write('<p>Pierwszy element to <strong>' + nowaTablica[0] + '</strong></p>');
+   document.write('<p>Pierwszy element to <strong>' + nowaTablica[0] + '</strong></p>');
+
+</script>
+<div id="Zad2"></div>
+<h3>Zad2</h3>
+<script>
     document.write('<p>Ostatni element to: <strong>' + nowaTablica[nowaTablica.length - 1] + '</strong></p>');
 
     nowaTablica.unshift('Element0');
     document.write('<p>Pierwszy element po unshift() to: <strong>' + nowaTablica[0] + '</strong></p>');
 </script>
 
-<div id="zadanie3"></div>
+<div id="Zad3"></div>
 <script>
     let paragrafy = document.getElementsByTagName('p');
     let iloscParagrafow = paragrafy.length;
@@ -34,11 +40,11 @@
         "<p>Na stronie znajduje się <strong>" + iloscParagrafow + "</strong> elementów &lt;p&gt;.</p>"; 
 </script>
 
-<div id="zadanie4">
+<div id="Zad4">
     <h3>Zad4</h3>
 
     <script>
-        const main = document.getElementById('zadanie4');
+        const main = document.getElementById('Zad4');
 
         const imie = "Oliwier";
         const nazwisko = "Bogdański";
@@ -72,13 +78,65 @@
         main.appendChild(output2);
 
         function pokazDane() {
-            let daneZDom = document.getElementById("zadanie4").getElementsByTagName("p")[0].textContent;
+            let daneZDom = document.getElementById("Zad4").getElementsByTagName("p")[0].textContent;
             alert("Dane: " + daneZDom);
         }
     </script>
 
     <button onclick="pokazDane()">Pokaż dane</button>
+
 </div>
+<div id="quiz-section">
+    <h3>Zad5 - Quiz</h3>
+    <div id="quiz-container">
+        <p id="question-text"></p>
+        <input type="number" id="user-answer" placeholder="Wpisz odpowiedź">
+        <button onclick="sprawdzOdpowiedz()">Prześlij odpowiedź</button>
+    </div>
+    <div id="quiz-result"></div>
+</div>
+
+<script>
+    const questions = [
+        ['Ile księżyców ma Ziemia?', 1],
+        ['Ile księżyców ma Saturn?', 62],
+        ['Ile księżyców ma Wenus?', 0]
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    const questionText = document.getElementById('question-text');
+    const resultBox = document.getElementById('quiz-result');
+
+    function wyswietlPytanie() {
+        if (currentQuestion < questions.length) {
+            questionText.textContent = questions[currentQuestion][0];
+        } else {
+            document.getElementById('quiz-container').style.display = 'none';
+            resultBox.innerHTML = `<p>Twój wynik: <strong>${score}</strong> z <strong>${questions.length}</strong> pytań.</p>`;
+        }
+    }
+
+    function sprawdzOdpowiedz() {
+        const answer = parseInt(document.getElementById('user-answer').value);
+        const correctAnswer = questions[currentQuestion][1];
+
+        if (answer === correctAnswer) {
+            alert('Prawidłowa odpowiedź!');
+            score++;
+        } else {
+            alert('Błąd. Prawidłowa odpowiedź to ' + correctAnswer);
+        }
+
+        document.getElementById('user-answer').value = ''; 
+        currentQuestion++;
+        wyswietlPytanie();
+    }
+
+    wyswietlPytanie();
+</script>
+
 
 </body>
 </html>

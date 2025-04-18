@@ -1,0 +1,24 @@
+h3{
+    color: blue;
+    font-style: italic;
+    font-size: 27px;
+}
+body{
+    height: 100vh; 
+    background: #edf28d;
+    background: linear-gradient(0deg, rgba(237, 242, 141, 1) 0%, rgba(201, 242, 225, 1) 100%);
+}
+
+button{
+    background-color:green;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: #45a049;
+}
