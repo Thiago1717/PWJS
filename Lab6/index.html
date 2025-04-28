@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PWJS</title>
+<script>
+    
+    let score = 0;
+    let q = 0;
+
+    const questions = [
+    ['Która drużyna NBA ma najwięcej mistrzostw?', 'Boston Celtics'],
+    ['Kto jest najlepszym strzelcem w historii NBA?', 'LeBron James'],
+    ['Jak nazywa się nagroda dla najbardziej wartościowego gracza sezonu?', 'MVP'],
+    ['Ile punktów zdobył Kobe Bryant w swoim najlepszym meczu?', '81'],
+    ['W którym roku Michael Jordan zdobył pierwszy tytuł mistrzowski?', '1991']
+];
+
+function showQuestion() {
+            if (q < questions.length) {
+                document.getElementById('question').textContent = questions[q][0];
+                document.getElementById('answer').value = '';
+            } else {
+                showResult();
+            }
+        }
+
+        function nextQuestion() {
+            const answer = document.getElementById('answer').value.trim();
+
+            if (answer === '') {
+                alert('Proszę podać odpowiedź!');
+                return;
+            }
+
+            testQuestion(questions[q], answer);
+            q++;
+            showQuestion();
+        }
+
+        function testQuestion(question, answer) {
+            if (answer === question[1]) {
+                score++;
+                alert('Gratulacje, twoja odpowiedź jest poprawna!');
+            } else {
+                alert('Twoja odpowiedź jest błędna. Poprawna odpowiedź to: ' + question[1]);
+            }
+        }
+
+        function showResult() {
+            document.getElementById('question').textContent = 'Koniec quizu!';
+            document.getElementById('nextBtn').disabled = true;
+            document.getElementById('answer').style.display = 'none';
+
+            let message = 'Liczba punktów: ' + score;
+            message += ' z ' + questions.length;
+            message += '.';
+            document.write('<p>' + message + '</p>');
+        }
+
+        window.onload = function() {
+            showQuestion();
+        };
+    </script>
+</head>
+
+<body>
+<h1> Quiz - NBA</h1>
+
+<section id = "Projekt 1"> 
+    <p id = "question"></id></p>
+    <input type="text" id="answer" placeholder="Twoja odpowiedź">
+    <br><br>
+    <button id="nextBtn" onclick="nextQuestion()">Następne pytanie</button>
+</section>
+
+</body>
+</html>
