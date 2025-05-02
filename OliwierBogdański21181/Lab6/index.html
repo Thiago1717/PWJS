@@ -54,9 +54,9 @@ function showQuestion() {
             document.getElementById('nextBtn').disabled = true;
             document.getElementById('answer').style.display = 'none';
 
-            let message = 'Liczba punktów: ' + score;
+            let message = 'Poprawnie odpowiedziałeś na ' + score;
             message += ' z ' + questions.length;
-            message += '.';
+            message += ' pytań.';
             document.write('<p>' + message + '</p>');
         }
 
