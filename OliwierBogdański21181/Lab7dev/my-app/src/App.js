@@ -15,7 +15,7 @@ const todos = ['Wstać', 'Wypić kawę', 'Zjeść', 'Zrobić drzemkę', 'Zjeść
       <header className="App-header">
         <Hello name="Anna" />
         <Hello name="Bartek" />
-        <Hello name="Celina" />
+        <Hello name="Oliwier" />
         <Counter />
         <InputTracker />
         <LoginStatus isLoggedIn={true} />
