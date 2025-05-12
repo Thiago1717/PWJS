@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PWJS/OliwierBogda%C5%84ski21181/Lab8prod/static/css/main.e6c13ad2.css",
+    "main.js": "/PWJS/OliwierBogda%C5%84ski21181/Lab8prod/static/js/main.33fc4eab.js",
+    "static/js/453.ed3810f9.chunk.js": "/PWJS/OliwierBogda%C5%84ski21181/Lab8prod/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/PWJS/OliwierBogda%C5%84ski21181/Lab8prod/index.html",
+    "main.e6c13ad2.css.map": "/PWJS/OliwierBogda%C5%84ski21181/Lab8prod/static/css/main.e6c13ad2.css.map",
+    "main.33fc4eab.js.map": "/PWJS/OliwierBogda%C5%84ski21181/Lab8prod/static/js/main.33fc4eab.js.map",
+    "453.ed3810f9.chunk.js.map": "/PWJS/OliwierBogda%C5%84ski21181/Lab8prod/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.33fc4eab.js"
+  ]
+}
