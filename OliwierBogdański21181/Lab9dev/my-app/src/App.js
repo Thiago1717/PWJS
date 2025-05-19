@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react"
 import Counter from "./Counter"
-import "./App.css" // Zakładam, że plik CSS nazywa się App.css
+import "./App.css" 
 
 export default function App() {
   const handleSimpleClick = () => {
