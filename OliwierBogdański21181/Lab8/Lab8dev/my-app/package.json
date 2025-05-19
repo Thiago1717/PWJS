@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-    "homepage": "https://thiago1717.github.io/PWJS/OliwierBogdański21181/Lab8prod",
+    "homepage": "https://thiago1717.github.io/PWJS/OliwierBogdański21181/Lab8/Lab8prod",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
