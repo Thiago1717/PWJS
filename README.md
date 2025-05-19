@@ -1,2 +1,2 @@
 # Oliwier Bogdański 21181
-https://thiago1717.github.io/PWJS/
+Link do strony: https://thiago1717.github.io/PWJS/
