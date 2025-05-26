@@ -27,7 +27,7 @@ function App() {
         </ThemeProvider>
       </header>
 
-      <h2> Ćwiczenie 5</h2>
+      <h2> Ćwiczenie 5 </h2>
       <LayoutEffectExample/>
     </div>
   );
