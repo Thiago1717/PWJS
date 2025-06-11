@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PWJS/OliwierBogda%C5%84ski21181/Projekt/projektprod/static/css/main.27495dd7.css",
+    "main.js": "/PWJS/OliwierBogda%C5%84ski21181/Projekt/projektprod/static/js/main.5df8bac8.js",
+    "static/js/453.ed3810f9.chunk.js": "/PWJS/OliwierBogda%C5%84ski21181/Projekt/projektprod/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/PWJS/OliwierBogda%C5%84ski21181/Projekt/projektprod/index.html",
+    "main.27495dd7.css.map": "/PWJS/OliwierBogda%C5%84ski21181/Projekt/projektprod/static/css/main.27495dd7.css.map",
+    "main.5df8bac8.js.map": "/PWJS/OliwierBogda%C5%84ski21181/Projekt/projektprod/static/js/main.5df8bac8.js.map",
+    "453.ed3810f9.chunk.js.map": "/PWJS/OliwierBogda%C5%84ski21181/Projekt/projektprod/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27495dd7.css",
+    "static/js/main.5df8bac8.js"
+  ]
+}
